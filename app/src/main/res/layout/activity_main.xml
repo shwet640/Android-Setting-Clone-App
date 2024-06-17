@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="left"
+    android:background="#3D7E7E">
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:paddingTop="70dp"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:text="Settings"/>
+
+
+    <com.google.android.material.search.SearchBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:hint="Search setting">
+        
+    </com.google.android.material.search.SearchBar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="vertical"
+            android:background="@drawable/setting_color_one"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+            >
+
+            <TextView
+                android:id="@+id/network_and_internet"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:drawableLeft="@drawable/network"
+                android:text="Network and Internet"
+                android:drawablePadding="15dp"
+                android:textSize="17dp"
+                android:onClick="open_network_and_internet"
+                />
+
+
+            <TextView
+                android:id="@+id/connected_devices"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:drawableLeft="@drawable/connected"
+                android:drawablePadding="15dp"
+                android:text="Connected devices"
+                android:textSize="17dp"
+                android:onClick="open_connected_device"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="356dp"
+            android:orientation="vertical"
+            android:background="@drawable/setting_color_one"
+            android:layout_marginTop="12.5dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="21dp">
+
+            <TextView
+                android:id="@+id/personalise"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:drawableLeft="@drawable/network"
+                android:text="Personalise"
+                android:drawablePadding="15dp"
+                android:textSize="17dp"
+                android:onClick="open_personalise"/>
+
+            <TextView
+                android:id="@+id/display"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:drawableLeft="@drawable/connected"
+                android:drawablePadding="15dp"
+                android:text="Display"
+                android:textSize="17dp"
+                android:onClick="open_display"/>
+
+            <TextView
+                android:id="@+id/home_and_lockscreen"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:drawableLeft="@drawable/connected"
+                android:drawablePadding="15dp"
+                android:text="Home and Lock screen"
+                android:textSize="17dp"
+                android:onClick="open_home_and_lock"
+                />
+
+            <TextView
+                android:id="@+id/sound_and_vibrations"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:drawableLeft="@drawable/connected"
+                android:drawablePadding="15dp"
+                android:text="Sound and vibration"
+                android:textSize="17dp"
+                android:onClick="open_sound_and_vibration"/>
+
+            <TextView
+                android:id="@+id/notifications"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:drawableLeft="@drawable/connected"
+                android:drawablePadding="15dp"
+                android:text="Notifications"
+                android:textSize="17dp"
+                android:onClick="open_notifications"/>
+
+            <TextView
+                android:id="@+id/gestures"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:drawableLeft="@drawable/connected"
+                android:drawablePadding="15dp"
+                android:text="Gestures"
+                android:textSize="17dp"
+                android:onClick="open_gestures"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="244dp"
+            android:orientation="vertical"
+            android:background="@drawable/setting_color_one"
+            android:layout_marginTop="12.5dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="21dp">
+
+            <TextView
+                android:id="@+id/battery"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:drawableLeft="@drawable/network"
+                android:text="Battery"
+                android:drawablePadding="15dp"
+                android:textSize="17dp"
+                android:onClick="open_battery"/>
+
+
+            <TextView
+                android:id="@+id/storage"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:drawableLeft="@drawable/connected"
+                android:drawablePadding="15dp"
+                android:text="Storage"
+                android:textSize="17dp"
+                android:onClick="open_storage"/>
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:drawableLeft="@drawable/connected"
+                android:drawablePadding="15dp"
+                android:text="Location"
+                android:textSize="17dp"
+                android:onClick="open_location"/>
+
+            <TextView
+                android:id="@+id/accesibility"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:drawableLeft="@drawable/connected"
+                android:drawablePadding="15dp"
+                android:text="Accesibility"
+                android:textSize="17dp"
+                android:onClick="open_accesibility"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="244dp"
+            android:orientation="vertical"
+            android:background="@drawable/setting_color_one"
+            android:layout_marginTop="12.5dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="21dp">
+
+            <TextView
+                android:id="@+id/apps"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:drawableLeft="@drawable/network"
+                android:text="Apps"
+                android:drawablePadding="15dp"
+                android:textSize="17dp"
+                android:onClick="open_apps"/>
+
+            <TextView
+               android:id="@+id/password_and_accounts"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:drawableLeft="@drawable/connected"
+                android:drawablePadding="15dp"
+                android:text="Password and accounts"
+                android:textSize="17dp"
+                android:onClick="open_password_and_accounts"/>
+
+            <TextView
+                android:id="@+id/Security_and_privacy"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:drawableLeft="@drawable/connected"
+                android:drawablePadding="15dp"
+                android:text="Security and privacy"
+                android:textSize="17dp"
+                android:onClick="open_security_and_privacy"/>
+
+            <TextView
+                android:id="@+id/safety_and_emergency"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:drawableLeft="@drawable/connected"
+                android:drawablePadding="15dp"
+                android:text="Safety and emergency"
+                android:textSize="17dp"
+                android:onClick="open_safety_and_emergency"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="423dp"
+            android:orientation="vertical"
+            android:background="@drawable/setting_color_one"
+            android:layout_marginTop="12.5dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="21dp">
+
+            <TextView
+                android:id="@+id/digital_wellbeing"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:drawableLeft="@drawable/network"
+                android:text="Digital Wellbeing and parental controls"
+                android:drawablePadding="15dp"
+                android:textSize="17dp"
+                android:onClick="open_didgital_and_wellbeing"
+                />
+
+            <TextView
+                android:id="@+id/google"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:drawableLeft="@drawable/connected"
+                android:drawablePadding="15dp"
+                android:text="Google"
+                android:textSize="17dp"
+                android:onClick="open_google"
+                />
+
+            <TextView
+                android:id="@+id/system_updates"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:drawableLeft="@drawable/connected"
+                android:drawablePadding="15dp"
+                android:text=" System updates"
+                android:textSize="17dp"
+                android:onClick="open_system_updates"
+                />
+
+            <TextView
+                android:id="@+id/Rating_reviews"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:drawableLeft="@drawable/connected"
+                android:drawablePadding="15dp"
+                android:text="Rating and feedback"
+                android:textSize="17dp"
+                android:onClick="open_rating_and_reviews"
+                />
+
+            <TextView
+                android:id="@+id/help"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:drawableLeft="@drawable/connected"
+                android:drawablePadding="15dp"
+                android:text="Help"
+                android:textSize="17dp"
+                android:onClick="open_help"
+                />
+
+            <TextView
+                android:id="@+id/system"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:drawableLeft="@drawable/connected"
+                android:drawablePadding="15dp"
+                android:text="System"
+                android:textSize="17dp"
+                android:onClick="open_system"
+                />
+
+            <TextView
+                android:id="@+id/about_phone"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:drawableLeft="@drawable/connected"
+                android:drawablePadding="15dp"
+                android:text="About phone"
+                android:textSize="17dp"
+                android:onClick="open_about_phone"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
